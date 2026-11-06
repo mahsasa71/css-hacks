@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    margin: 100px auto 0 auto;
+
+}
+
+.accordian{
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid transparent;
+    margin-bottom: 50px;
+    position: relative;
+}
+.accordian--open{
+    border-color: red;
+}
+
+
+.accordian-header{
+    cursor: pointer;
+    user-select: none;
+    padding: 18px;
+}
+
+.accordian--open{
+    padding: 16px;
+}
+
+.accordian--open .accordianbody{
+    display: block;
+}
+
+.accordian--open .accordian-title{
+    color: #05A6A6;
+}
+.accordian-title{
+    color: #1d2939;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.accordianbody{
+display: none;
+padding: 0 18px 36px 18px;
+}
+
+
+.accordiantext{
+color: #1d2939;
+font-size: 14px;
+}
+
+
+.accordian-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 1px solid aqua;
+    background-color: #fff;
+    position: absolute;
+    left: 18px;
+    bottom: -18px;
+    
+
+}
+
+.accordian--open .accordian-icon{
+    background-color: #05A6A6;
+}
+
+
+.accordianiconadd{
+
+}
+
+.accordianiconminus{
+    display: none;
+
+}
+
+
+
+.accordian--open .accordianiconadd{
+    display: none;
+
+}
+
+
+.accordian--open .accordianiconminus{
+    display: block;
+}

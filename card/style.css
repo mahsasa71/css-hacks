@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.card{
+    width: 592px;
+    height: 424px;
+    background-image: url(card.png);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.card:hover .cart-content{
+    bottom: 0;
+}
+
+.cardwrapper{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.cardicon{
+    color: white;
+}
+
+.cardwrapper{
+    display: flex;
+    align-items: center;
+gap: 16px;
+}
+
+
+
+
+.cardmessage{
+    width: 80px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: navy;
+    color:white;
+    display: flex;
+    align-items: center;
+    gap:6px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.cardheart{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.cart-content{
+    position: absolute;
+    bottom:-142px;
+    right: 0;
+    left: 0;
+    height: 142px;
+    padding: 36px 24px 24px ;
+    background:linear-gradient(180deg,rgba(0,0,0,0.00) 0%,#000 100%);
+    color: white;
+    transition: all ease-in 160ms;
+}
+
+
+.cart-title{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.cart-caption{
+    font-size: 20px;
+}

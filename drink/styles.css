@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;box-sizing: border-box;
+
+}
+
+
+body{
+    line-height: 1.5;
+    font-size: 18px;
+    background-color: brown;
+
+}
+.container{
+    width: 1008px;
+    margin: 100px auto;
+    display: flex;
+    column-gap: 84px;
+
+}
+.drink{
+    width: 280px;
+    background-color: #F6F6F6;
+    border-radius: 300px;
+    padding: 32px 0;
+    position: relative;
+    cursor: pointer;
+}
+.drink-image{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  transition: all 400 cubic-bezier(0.68,-0.55,0.27,1.55) 100ms;
+
+}
+.drink-backimage{
+    position: absolute;
+    transition: all 400 cubic-bezier(0.68,-0.55,0.27,1.55) 100ms;
+
+}
+.drink-image-right{
+    top: 64px;
+    right: 20px;
+
+}
+.drink-image-left{
+    bottom: 120px;
+    left: 20px;
+}
+.drink-textwrapper{
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+justify-content: center;
+align-items: center;
+margin-bottom: 32px;
+margin-top: 32px;
+}
+
+.drink-comment{
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(299,299,299,70%);
+    border-radius: 50px 12px;
+    width: 180px;
+    text-align: center;
+    padding: 15px 16px;
+    box-shadow: 0px 24px 50px -10px rgba(0,0,0,0.10, green, blue, alpha);
+    z-index: 1;
+    transform: scale(0) translateX(0);
+      transition: all 400 cubic-bezier(1,0,0,1) 100ms;
+}
+.drink-comment h6{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+
+.drink-comment p{
+    font-size: 14px;
+}
+
+.drink:hover .drink-comment{
+    transform:scale(1) translateX(100px)
+}
+.drink:hover .drink-image{
+    transform: scale(1.2) rotate(-10deg);
+
+}
+.drink:hover .drink-backimage{
+    filter: blur(2px);
+}
+.drink:hover .drink-image-right{
+    transform: rotate(10deg);
+}
+.drink:hover .drink-image-left{
+    transform: rotate(-10deg);
+}
